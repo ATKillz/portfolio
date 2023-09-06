@@ -1,18 +1,3 @@
-html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
-
-  --imp-text-color: #c770f0;
-}
 
 .purple {
   color: var(--imp-text-color) !important;
@@ -32,7 +17,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #150e37;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,18 +42,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: lightskyblue;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgb(112, 172, 209);
   border-radius: 12px;
 }
 
@@ -79,13 +64,13 @@ button:focus {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 1.2rem 2rem !important;
   font-size: 1.2rem !important;
 }
 
@@ -97,7 +82,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #6650f4 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -191,11 +176,11 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 7px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
-  bottom: 1px;
+  background: lightskyblue;
+  bottom: -5px;
   left: 0;
   z-index: -1;
   transition: all 0.3s ease-out 0s;
@@ -204,6 +189,14 @@ button:focus {
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
+
+.navbar-nav {
+  background-color:black;
+  border-radius:10px;
+  padding:5px;
+  margin:10px auto;
+}
+
 
 /* --------- */
 /* Home section */
@@ -216,32 +209,6 @@ button:focus {
   display: inline-block;
 }
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
-}
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -251,15 +218,12 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 100px !important;
 }
 
 .home-section {
-  position: relative;
+  position:relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -271,27 +235,29 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em !important;
+  font-size: 3em !important;
   padding-left: 50px !important;
 }
 
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
+  margin-left:5px;
+  margin-bottom:-30px;
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: lightskyblue;
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
+  font-size: 2.5em !important;
+  color: lightskyblue !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: lightblue !important;
 }
 
 @media (max-width: 767px) {
@@ -305,17 +271,6 @@ button:focus {
   }
 }
 
-.myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
-}
 
 .home-about-section {
   position: relative;
@@ -353,10 +308,10 @@ button:focus {
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 80px !important;
+  height: 80px !important;
   text-align: center !important;
-  font-size: 1.2em !important;
+  font-size:2.3em !important;
   line-height: 2em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
@@ -371,7 +326,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: lightskyblue;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,68 +334,26 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px lightskyblue;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: lightskyblue;
+  box-shadow: 0 0 5px lightskyblue;
+  text-shadow: 0 0 2px lightskyblue;
 }
 
 .social-icons {
   display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: black !important;
 }
 
-/* --------- */
-/* Footer */
-/* --------- */
-.footer {
-  background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
-}
-.footer-copywright {
-  text-align: center !important;
-}
 
-.footer-body {
-  z-index: 1;
-  text-align: center !important;
-}
-
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: center !important;
-  }
-}
-
-.footer h3 {
-  font-size: 1em;
-  color: white !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-}
-.footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-  padding: 0 !important;
-}
-
-.blockquote-footer {
-  color: #a588c0 !important;
-}
 /* --------- */
 /* Projects */
 /* --------- */
@@ -718,26 +631,4 @@ button:focus {
   100% {
     transform: scale(1);
   }
-}
-
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-.fork-btn-inner::after {
-  display: none !important;
 }
