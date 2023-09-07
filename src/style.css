@@ -47,7 +47,7 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: lightskyblue;
+  background: rgb(58, 107, 255);
   border-radius: 12px;
 }
 
@@ -179,7 +179,7 @@ button:focus {
   height: 7px;
   width: 0;
   border-radius: 16px;
-  background: lightskyblue;
+  background: rgb(58, 107, 255);
   bottom: -5px;
   left: 0;
   z-index: -1;
@@ -247,12 +247,12 @@ button:focus {
 }
 
 .main-name {
-  color: lightskyblue;
+  color: rgb(58, 107, 255);
 }
 
 .Typewriter__wrapper {
   font-size: 2.5em !important;
-  color: lightskyblue !important;
+  color: rgb(58, 107, 255) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
@@ -295,23 +295,30 @@ button:focus {
   text-align: center !important;
   padding-top: 25px;
   color: white !important;
+  z-index:1;
+  position:fixed;
+  bottom:5%;
+  left:0%;
+  margin:0 auto;
 }
 
 .home-about-social-links {
   justify-content: center !important;
-  padding-top: 15px !important;
   display: inline-block !important;
   position: relative !important;
   padding-inline-start: 0 !important;
+  background-color:black;
+  opacity:0.83;
+  border-radius:20px;
 }
 
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
-  width: 80px !important;
-  height: 80px !important;
+  width: 60px !important;
+  height: 60px !important;
   text-align: center !important;
-  font-size:2.3em !important;
+  font-size:1.8em !important;
   line-height: 2em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
@@ -326,7 +333,6 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: lightskyblue;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -334,19 +340,18 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px lightskyblue;
+  box-shadow: 0 0 15px white;
 }
 
 .home-social-icons:hover {
-  color: lightskyblue;
-  box-shadow: 0 0 5px lightskyblue;
-  text-shadow: 0 0 2px lightskyblue;
+  color: white !important;
+  background:rgba(9, 5, 29, 0.171) !important;
 }
 
 .social-icons {
   display: inline-block !important;
-  padding-right: 80px;
-  padding-left: 80px;
+  opacity:0.83;
+  padding:20px 30px 20px 30px;
 }
 
 .icon-colour {
@@ -373,48 +378,15 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
-  background-color: transparent !important;
+  background-color: rgb(0, 0, 206) !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 .project-card-view:hover {
-  transform: scale(1.02) !important;
+  transform: scale(1.015) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-}
-
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
 }
 
 .card-img-top {
@@ -423,31 +395,25 @@ button:focus {
   border-radius: 10px !important;
 }
 
-.blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
-}
-
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: black !important;
+  background-color: white !important;
+  border-color: black !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: black !important;
+  border-color: black !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: rgb(58, 107, 255) !important;
   font-size: 2.3em !important;
-  font-weight: 500 !important;
+  font-weight: bold !important;
   padding-top: 10px !important;
 }
 
@@ -465,17 +431,16 @@ button:focus {
 
 .tech-icons {
   font-size: 4.5em !important;
-  margin: 15px !important;
+  margin: 25px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  background-color:rgb(0, 0, 206);
+  border-radius:20px;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: all 0.3s ease 0s !important;
 }
 
 @media (max-width: 767px) {
@@ -485,9 +450,10 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.20) !important;
+  background-color:rgb(0, 0, 255);
+  border:none;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -598,37 +564,21 @@ button:focus {
   border: 2px solid #8a49a8;
 }
 
-.like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-  font-family: sans-serif !important;
+.content-header {
+  color:rgb(58, 107, 255);
+  font-size:1.15em;
 }
 
-.like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
+.experience-date, .experience-heading {
+  text-align:left;
 }
-
-.like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+.experience-heading {
+  font-weight:bold;
 }
-
-.animate-like {
-  animation-name: likeAnimation;
-  animation-fill-mode: forwards;
-  animation-duration: 0.85s;
+.experience-date {
+  color:rgb(58, 107, 255);
+  font-weight:bold;
 }
-@keyframes likeAnimation {
-  0% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
+.skills-div {
+  display:block;
 }
